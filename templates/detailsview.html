@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="card pt-2 shadow" style="width: 18rem;background-color:beige;border:1px solid blue">
+  <img src="{{book.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{book.title}}</h5>
+      <p>Price: ₹{{book.price}}</p>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">BUY</a>
+  </div>
+</div>
+
+
+
+{% endblock %}
